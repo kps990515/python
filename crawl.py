@@ -13,7 +13,7 @@ def updateLp():
     
     for n in range(1,15):
         url = "https://api-cypress.scope.klaytn.com/v1/tokens?key=KSLP&page=" + str(n)
-        req = requests.get(url).text
+        req = requests.get(url).content
         rjson = json.loads(req.decode("utf-8"))
         result = rjson['result']
         
