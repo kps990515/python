@@ -29,6 +29,7 @@ if __name__ == '__main__':
     updater.start_polling()"""
 
     def crawlLp():
+        print("살아있음")
         updateLpList = updateLp()
         updateLpNum = len(updateLpList)
                 
