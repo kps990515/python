@@ -15,6 +15,9 @@ def updateLp():
         url = "https://api-cypress.scope.klaytn.com/v1/tokens?key=KSLP&page=" + str(n)
         req = requests.get(url).json()
         result = req['result']
+        if result == []:
+            print("빈값")
+            break
         
         for item in result: # result에 있는 LP하나씩
             with open("klayswapLP.txt", "r", encoding="utf8") as f:
