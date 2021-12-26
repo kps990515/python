@@ -14,7 +14,7 @@ def updateLp():
     for n in range(1,15):
         url = "https://api-cypress.scope.klaytn.com/v1/tokens?key=KSLP&page=" + str(n)
         req = requests.get(url).text
-        rjson = json.loads(req)
+        rjson = json.loads(req.decode("utf-8"))
         result = rjson['result']
         
         for item in result: # result에 있는 LP하나씩
