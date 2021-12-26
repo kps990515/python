@@ -11,7 +11,7 @@ if __name__ == '__main__':
     token = '5013330145:AAE0WDeo1k0AbCuHO56AgMTk-Aryqi2JGf0'
     bot = telegram.Bot(token=token)
 
-    #step2.Updater(유저의 입력을 계속 모니터링하는 역할), Dispatcher
+    """#step2.Updater(유저의 입력을 계속 모니터링하는 역할), Dispatcher
     updater = Updater(token=token, use_context=True)
     dispatcher = updater.dispatcher
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     dispatcher.add_handler(start_handler)
 
     #step6.Updater 실시간 입력 모니터링 시작(polling 개념)
-    updater.start_polling()
+    updater.start_polling()"""
 
     def crawlLp():
         updateLpList = updateLp()
